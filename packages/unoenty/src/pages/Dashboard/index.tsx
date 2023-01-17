@@ -91,7 +91,7 @@ const Dashboard: React.FC = () => {
 						variant="h1"
 						color="textSecondary"
 					>
-						Games
+						房间们
 					</Typography>
 
 					{DeviceUtil.isMobile ? (
@@ -107,7 +107,7 @@ const Dashboard: React.FC = () => {
 						onClick={handleCreateNewGame}
 						disabled={loadingCreateGame}
 					>
-						{loadingCreateGame ? "CREATING..." : "CREATE NEW GAME"}
+						{loadingCreateGame ? "CREATING..." : "创建一个新房间"}
 					</Button>
 				</Grid>
 

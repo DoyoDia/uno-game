@@ -26,7 +26,7 @@ import unoWallpaperImage from "@/assets/uno-wallpaper.png"
 const statusButtonTextMap: StatusMap<string> = {
 	playing: "SPECTATE",
 	ended: "",
-	waiting: "JOIN",
+	waiting: "加入",
 }
 
 type GameCardProps = {
@@ -151,7 +151,7 @@ const GameCard: React.FC<GameCardProps> = (props) => {
 						variant="h2"
 						className={classes.remainingSlotText}
 					>
-						{remainingSlots} {remainingSlots === 1 ? "SLOT" : "SLOTS"} LEFT
+						{remainingSlots} {remainingSlots === 1 ? "空位" : "空位"} 剩余
 					</Typography>
 
 					<Divider orientation="horizontal" size={1} />
