@@ -24,8 +24,8 @@ import ShareUtil from "@/utils/share"
 import unoWallpaperImage from "@/assets/uno-wallpaper.png"
 
 const statusButtonTextMap: StatusMap<string> = {
-	playing: "SPECTATE",
-	ended: "",
+	playing: "观战",
+	ended: "结束哩",
 	waiting: "加入",
 }
 
@@ -111,14 +111,14 @@ const GameCard: React.FC<GameCardProps> = (props) => {
 								variant="caption"
 								className={classes.infoText}
 							>
-								At least 2 players are needed to start a game.
+								至少需要两名玩家才能开启游戏
 							</Typography>
 
 							<Typography
 								variant="caption"
 								className={classes.infoText}
 							>
-								The game automatically starts when all players are ready.
+								游戏将在所有玩家准备后自动开始.
 							</Typography>
 						</Grid>
 					</Grid>
@@ -140,7 +140,7 @@ const GameCard: React.FC<GameCardProps> = (props) => {
 					}}
 				>
 					{mode === "info" ? (
-						linkCopied ? "COPIED!" : "COPY LINK"
+						linkCopied ? "已复制!" : "复制链接"
 					) : (
 						buttonText
 					)}

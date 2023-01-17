@@ -88,7 +88,7 @@ const PlayerItem: React.FC<PlayerItem> = (props) => {
 				variant="h2"
 				className={classes.statusText}
 			>
-				{ready ? "READY" : "UNREADY"}
+				{ready ? "已准备" : "未准备"}
 			</Typography>
 		</Grid>
 	)

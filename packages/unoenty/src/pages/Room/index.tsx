@@ -118,7 +118,7 @@ const Room: React.FC = () => {
 							onClick={toggleReady}
 							startIcon={socket?.currentPlayer?.ready ? <CancelIcon /> : <ReadyIcon />}
 						>
-							{socket?.currentPlayer?.ready ? "CANCEL" : "GET READY"}
+							{socket?.currentPlayer?.ready ? "取消" : "点我准备"}
 						</Button>
 					</Grid>
 
@@ -133,7 +133,7 @@ const Room: React.FC = () => {
 							variant="h2"
 							className={classes.itemTitle}
 						>
-							INFO
+							信息
 						</Typography>
 
 						<Divider orientation="horizontal" size={1} />
@@ -155,7 +155,7 @@ const Room: React.FC = () => {
 							variant="h2"
 							className={classes.itemTitle}
 						>
-							PLAYERS
+							玩家
 						</Typography>
 
 						<Divider orientation="horizontal" size={1} />
