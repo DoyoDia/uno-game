@@ -33,9 +33,9 @@ const PlayerEffect: React.FC<PlayerEffectProps> = (props) => {
 			if (playerState === "Uno") {
 				setPlayerEffectMessage("UNO!")
 			} else if (playerState === "Blocked") {
-				setPlayerEffectMessage("BLOCKED!")
+				setPlayerEffectMessage("别出")
 			} else if (playerState === "BuyCards") {
-				setPlayerEffectMessage(`BUY ${amountToBuy}!`)
+				setPlayerEffectMessage(`加 ${amountToBuy}牌`)
 			}
 
 			setTimeout(() => {
